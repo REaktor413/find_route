@@ -28,41 +28,41 @@ def home(request, pk=None):
     page_numder = request.GET.get('page')
     page_obj = lst.get_page(page_numder)
     context = {'page_obj': page_obj, 'objects_list': qs, 'form': form}
-    return render(request, "trains/home.html", context)
+    return render(request, "cities/home.html", context)
 
 
 class CityDetailView(DetailView):
     queryset = City.objects.all()
-    template_name = "trains/detail.html"
+    template_name = "cities/detail.html"
 
 
 class CityCreateView(SuccessMessageMixin, CreateView):
     model = City
     form_class = CityForm
-    template_name = "trains/create.html"
-    success_url = reverse_lazy('trains:home')
+    template_name = "cities/create.html"
+    success_url = reverse_lazy('cities:home')
     success_message = "Город успешно создан"
 
 
 class CityUpdateView(SuccessMessageMixin, UpdateView):
     model = City
     form_class = CityForm
-    template_name = "trains/update.html"
-    success_url = reverse_lazy('trains:home')
+    template_name = "cities/update.html"
+    success_url = reverse_lazy('cities:home')
     success_message = "Город успешно отредактирован"
 
 
 class CityDeleteView(SuccessMessageMixin, DeleteView):
     model = City
-    template_name = "trains/delete.html"
-    success_url = reverse_lazy('trains:home')
+    template_name = "cities/delete.html"
+    success_url = reverse_lazy('cities:home')
     success_message = "Город успешно удален"
 
 
 class CityListView(ListView):
     paginate_by = 2
     model = City
-    template_name = "trains/home.html"
+    template_name = "cities/home.html"
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)

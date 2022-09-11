@@ -13,7 +13,7 @@ class Train(models.Model):
                                   on_delete=models.CASCADE,
                                   related_name='from_city_set',
                                   verbose_name='Из какого города')
-    to_city = models.ForeignKey('trains.City',
+    to_city = models.ForeignKey('cities.City',
                                 on_delete=models.CASCADE,
                                 related_name='to_city_set',
                                 verbose_name='В какой город')
@@ -39,9 +39,6 @@ class Train(models.Model):
     def save(self, *args, **kwargs):
         self.clean()
         super().save(*args, **kwargs)
-
-
-
 
 
         # def get_absolute_url(self):
