@@ -41,15 +41,3 @@ class Train(models.Model):
         super().save(*args, **kwargs)
 
 
-        # def get_absolute_url(self):
-        #     return reverse('trains:detail', kwargs={'pk': self.pk})
-
-
-class TrainTest(models.Model):
-    name = models.CharField(max_length=50,
-                            unique=True,
-                            verbose_name='Номер поезда')
-    from_city = models.ForeignKey(City,
-                                  on_delete=models.CASCADE,
-                                  related_name='from_city',
-                                  verbose_name='Из какого города')
