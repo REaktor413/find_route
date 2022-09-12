@@ -1,0 +1,74 @@
+DEBUG 2022-09-12 21:19:31,327 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-09-12 21:19:31,329 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-09-12 21:19:52,389 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:19:52,394 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:19:52,396 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:20:08,670 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 19 LIMIT 21; args=(19,); alias=default
+DEBUG 2022-09-12 21:20:08,671 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-09-12 21:20:08,673 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:20:08,679 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:20:08,682 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:20:08,686 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:22:42,436 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-09-12 21:22:42,440 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-09-12 21:22:42,820 utils (0.015) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 19 LIMIT 21; args=(19,); alias=default
+DEBUG 2022-09-12 21:22:42,821 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-09-12 21:22:42,822 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id" FROM "trains_train" ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:22:42,839 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 19 LIMIT 21; args=(19,); alias=default
+DEBUG 2022-09-12 21:22:42,841 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:22:42,843 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:22:42,844 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-09-12 21:22:42,845 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:22:42,846 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-09-12 21:22:42,847 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-09-12 21:22:42,847 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2022-09-12 21:22:42,854 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:22:42,857 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:22:42,859 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:13,831 utils (0.000) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+DEBUG 2022-09-12 21:25:13,834 utils (0.000) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2022-09-12 21:25:23,344 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 19 LIMIT 21; args=(19,); alias=default
+DEBUG 2022-09-12 21:25:23,345 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:25:23,346 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:23,369 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:23,373 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:23,375 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:35,048 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 19 LIMIT 21; args=(19,); alias=default
+DEBUG 2022-09-12 21:25:35,049 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 1 LIMIT 21; args=(1,); alias=default
+DEBUG 2022-09-12 21:25:35,051 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:35,055 utils (0.016) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:35,057 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:35,059 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:44,565 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 4 LIMIT 21; args=(4,); alias=default
+DEBUG 2022-09-12 21:25:44,566 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:25:44,567 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:44,571 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:44,573 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:44,575 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:50,493 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2022-09-12 21:25:50,495 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:25:50,497 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:50,502 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:50,504 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:50,506 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:55,172 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 19 LIMIT 21; args=(19,); alias=default
+DEBUG 2022-09-12 21:25:55,173 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:25:55,174 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:55,178 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:55,179 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:25:55,181 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:26:02,003 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 7 LIMIT 21; args=(7,); alias=default
+DEBUG 2022-09-12 21:26:02,004 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" WHERE "cities_city"."id" = 19 LIMIT 21; args=(19,); alias=default
+DEBUG 2022-09-12 21:26:02,007 utils (0.000) SELECT "trains_train"."id", "trains_train"."name", "trains_train"."travel_time", "trains_train"."from_city_id", "trains_train"."to_city_id", "cities_city"."id", "cities_city"."name", T3."id", T3."name" FROM "trains_train" INNER JOIN "cities_city" ON ("trains_train"."from_city_id" = "cities_city"."id") INNER JOIN "cities_city" T3 ON ("trains_train"."to_city_id" = T3."id") ORDER BY "trains_train"."travel_time" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:26:02,012 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:26:02,014 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
+DEBUG 2022-09-12 21:26:02,016 utils (0.000) SELECT "cities_city"."id", "cities_city"."name" FROM "cities_city" ORDER BY "cities_city"."name" ASC; args=(); alias=default
